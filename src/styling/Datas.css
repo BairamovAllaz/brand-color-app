@@ -1,0 +1,90 @@
+.Datalar {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  margin-top: 90px;
+}
+
+.Datalar::-webkit-scrollbar {
+  display: none;
+}
+
+.Datas_indiv {
+  width: 100%;
+  height: 110px;
+  border: solid 1px lightgray;
+  padding: 5px;
+}
+.Datas_in_header {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.Datas_color_section {
+  width: auto;
+  height: 70px;
+  display: flex;
+  padding: 10px;
+}
+
+.Datas_colors_div {
+  flex: 1;
+  max-width: 60px;
+  height: 50px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.selected .Datas_colors_div {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+.selected {
+  border: solid 2px red;
+}
+
+.Footerall {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footershowcolor {
+  width: 150px;
+  height: 50px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  font-size: 20px;
+  color: white;
+  border-radius: 30px;
+  font-weight: 800;
+  transition: 1s;
+}
+
+.footertopsection {
+  width: 50px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 400px;
+  font-size: 60px;
+  color: black;
+  cursor: pointer;
+}
