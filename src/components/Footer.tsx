@@ -4,13 +4,13 @@ import { FC } from "react";
 
 interface prop {
   copytext: string;
-  intokutu: any;
+  infoBox: any;
 }
 
-const Footer: FC<prop> = ({ copytext, intokutu }) => {
+const Footer: FC<prop> = ({ copytext, infoBox: intoBox }) => {
   const gotop = (): void => {
-    intokutu.current &&
-      intokutu.current.scrollIntoView({
+    intoBox.current &&
+      intoBox.current.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });

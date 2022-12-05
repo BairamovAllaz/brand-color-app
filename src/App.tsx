@@ -1,4 +1,3 @@
-import React from "react";
 import Leftsection from "./components/Leftsection";
 import Rightsection from "./components/Rightsection";
 import "./index.css";

@@ -12,7 +12,7 @@ interface prop {
 
 const Datas: FC<prop> = ({ alldata, pick, selected }) => {
   const [copytext, setcopytext] = useState<string>("");
-  const intokutu = useRef<any | undefined>();
+  const infoBox = useRef<any | undefined>();
 
   const getContrastYIQ = (hexcolor: any) => {
     var r = parseInt(hexcolor.substr(0, 2), 16);
@@ -28,12 +28,11 @@ const Datas: FC<prop> = ({ alldata, pick, selected }) => {
         <div
           className='intokutu'
           style={{ width: "100%", height: "5px" }}
-          ref={intokutu}></div>
+          ref={infoBox}></div>
         {alldata.map((e, index: any) => (
           <div
-            className={`Datas_indiv ${
-              selected.includes(e.slug) ? "selected" : ""
-            }`}
+            className={`Datas_indiv ${selected.includes(e.slug) ? "selected" : ""
+              }`}
             key={index}>
             <p className='Datas_in_header' onClick={() => pick(e.slug, e)}>
               {e.title}
@@ -60,7 +59,7 @@ const Datas: FC<prop> = ({ alldata, pick, selected }) => {
             </div>
           </div>
         ))}
-        <Footer copytext={copytext} intokutu={intokutu} />
+        <Footer copytext={copytext} infoBox={infoBox} />
       </div>
     </div>
   );

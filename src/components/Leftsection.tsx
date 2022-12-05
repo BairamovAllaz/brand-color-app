@@ -5,8 +5,6 @@ import {
   AiFillGithub,
   AiFillLinkedin,
 } from "react-icons/ai";
-import { useState } from "react";
-import React from "react";
 
 const Leftsection = () => {
   return (
@@ -15,7 +13,7 @@ const Leftsection = () => {
         <div className='All-logo'>
           <img
             width='100'
-            src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fdwglogo.com%2Fwp-content%2Fuploads%2F2015%2F11%2FDell-Logo-White-Background.png&f=1&nofb=1'
+            src='././Logo.jpg'
           />
           <h2 className='Logo_text'>
             Brand<strong>Colors</strong>
@@ -32,7 +30,7 @@ const Leftsection = () => {
         </p>
 
         <div className='left_modal_section'>
-          <p>Ellez Bairamov</p>
+          <p>Allaz Bairamov</p>
           <p>About Brand colors</p>
         </div>
       </div>
